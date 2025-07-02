@@ -1,7 +1,7 @@
 {
   "header": {
     "id": "ifc5.technical.buildingsmart.org/examples/Hello Wall/hello-wall-add-fire-rating-60@v1.ifcx",
-    "version": "0.1.2",
+    "version": "ifcx_alpha",
     "author": "authorname",
     "timestamp": "2025-06-27"
   },
@@ -18,11 +18,16 @@
   },
   "data": [
     {
-      "path":"93791d5d-5beb-437b-b8ec-2f1f0ba4bf3b",
+      "path":"25503984-6605-43a1-8597-eae657ff5bea",
+      "attributes": {
+        "bsi::ifc::prop::FireRating": "R30"
+      }
+    },
+    {
+      "path":"ab143723-f7b1-5368-b106-55896e88d768/My_Project/My_Site/My_Building/My_Storey/Wall/Window_001",
       "attributes": {
         "bsi::ifc::prop::FireRating": "R60"
       }
     }
   ]
-
 }
