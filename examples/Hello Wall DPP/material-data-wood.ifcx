@@ -1,0 +1,87 @@
+{
+  "header": {
+    "id": "ifc5.technical.buildingsmart.org/examples/Hello Wall DPP/material-data-wood.ifcx",
+    "version": "0.1.0",
+    "author": "Artur Tomczak",
+    "timestamp": "2025/07/03"
+  },
+  "imports": [
+    {
+      "uri": "https://ifcx.dev/@standards.buildingsmart.org/ifc/core/ifc@v5a.ifcx"
+    },
+    {
+      "uri": "https://ifcx.dev/@standards.buildingsmart.org/ifc/core/prop@v5a.ifcx"
+    },
+    {
+      "uri": "https://ifcx.dev/@standards.buildingsmart.org/ifc/ifc-mat/prop@v1.0.0.ifcx"
+    }
+  ],
+  "schemas": {},
+  "data": [
+    {
+      "path": "TODO-TIMBER-MATERIAL-PATH",
+      "comment": "Material class definition",
+      "attributes": {
+        "bsi::ifc::material": {
+          "code": "WOOD",
+          "uri": "https://identifier.buildingsmart.org/uri/fish/midas-materials/26/class/WOOD"
+        }
+      }
+    },
+    {
+      "path": "TODO-TIMBER-MATERIAL-PATH",
+      "comment": "Simple material display color",
+      "attributes": {
+        "bsi::ifc::presentation::diffuseColor": [
+          1,
+          0.9,
+          0.9
+        ]
+      }
+    },
+    {
+      "path": "TODO-TIMBER-MATERIAL-PATH",
+      "comment": "Material texture",
+      "attributes": {
+        "gltf::material": {
+          "name": "wood",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              0.9,
+              0.9,
+              1
+            ],
+            "baseColorTexture": "/textures/Wood034/Wood034_1K-JPG_Color.jpg",
+            "metallicFactor": 0,
+            "roughnessFactor": 0.2
+          },
+          "normalTexture": {
+            "texture": "/textures/Wood034/Wood034_1K-JPG_NormalGL.jpg",
+            "scale": 1
+          },
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": 0.5,
+          "doubleSided": false
+        }
+      }
+    },
+    {
+      "path": "TODO-TIMBER-MATERIAL-PATH",
+      "comment": "Material environmental properties - EPD",
+      "attributes": {
+        "bsi::ifc-mat::prop::StrengthClass": "C24",
+        "bsi::ifc-mat::prop::MoistureContent": 0.56,
+        "bsi::ifc-mat::prop::MassDensity": 529,
+        "bsi::ifc-mat::prop::GWP": {
+          "A1-A3": -629.4,
+          "A4": 0,
+          "A5": 0,
+          "C2": 1.802,
+          "C3": 863,
+          "D": -274.8
+        }
+      }
+    }
+  ]
+}

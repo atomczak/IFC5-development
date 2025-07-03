@@ -1,0 +1,82 @@
+{
+  "header": {
+    "id": "ifc5.technical.buildingsmart.org/examples/Hello Wall DPP/material-data-insulation.ifcx",
+    "version": "0.1.0",
+    "author": "Artur Tomczak",
+    "timestamp": "2025/07/03"
+  },
+  "imports": [
+    {
+      "uri": "https://ifcx.dev/@standards.buildingsmart.org/ifc/core/ifc@v5a.ifcx"
+    },
+    {
+      "uri": "https://ifcx.dev/@standards.buildingsmart.org/ifc/core/prop@v5a.ifcx"
+    },
+    {
+      "uri": "https://ifcx.dev/@standards.buildingsmart.org/ifc/ifc-mat/prop@v1.0.0.ifcx"
+    }
+  ],
+  "schemas": {},
+  "data": [
+    {
+      "path": "TODO-INSULATION-MATERIAL-PATH",
+      "comment": "Material class definition",
+      "attributes": {
+        "bsi::ifc::material": {
+          "code": "Pr_25_31_48_34",
+          "uri": "https://identifier.buildingsmart.org/uri/nbs/uniclass2015/1/class/Pr_25_31_48_34"
+        }
+      }
+    },
+    {
+      "path": "TODO-INSULATION-MATERIAL-PATH",
+      "comment": "Simple material display color",
+      "attributes": {
+        "bsi::ifc::presentation::diffuseColor": [
+          0.9,
+          0.85,
+          0.6
+        ]
+      }
+    },
+    {
+      "path": "TODO-INSULATION-MATERIAL-PATH",
+      "comment": "Material texture",
+      "attributes": {
+        "gltf::material": {
+          "name": "MineralWool",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.9,
+              0.85,
+              0.6,
+              1
+            ],
+            "metallicFactor": 0,
+            "roughnessFactor": 0.95
+          },
+          "alphaMode": "OPAQUE",
+          "alphaCutoff": 0.5,
+          "doubleSided": false
+        }
+      }
+    },
+    {
+      "path": "TODO-INSULATION-MATERIAL-PATH",
+      "comment": "Material environmental properties - EPD",
+      "attributes": {
+        "bsi::ifc-mat::prop::StrengthClass": "C24",
+        "bsi::ifc-mat::prop::MoistureContent": 0.56,
+        "bsi::ifc-mat::prop::MassDensity": 529,
+        "bsi::ifc-mat::prop::GWP": {
+          "A1-A3": -629.4,
+          "A4": 0,
+          "A5": 0,
+          "C2": 1.802,
+          "C3": 863,
+          "D": -274.8
+        }
+      }
+    }
+  ]
+}
